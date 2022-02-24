@@ -29,7 +29,7 @@ client.on('interactionCreate', async (interaction) => {
     if(interaction.channel.parentId === categoryChannelId && interaction.customId === "close"){
         if(client.ticket.includes(interaction.member.id)) return await interaction.reply({ephemeral: true, content: ":x: Vous n'avez pas la permission de fermer le ticket."})
         await interaction.reply(`Le salon est en cours de suppression.`)
-        client.ticket.splice(client.ticket.indexOf(interaction.message.mentions.members.first().id), 1)
+        if(interaction.message.mentions.members.first()) client.ticket.splice(client.ticket.indexOf(interaction.message.mentions.members.first().id), 1)
         setTimeout( function(){
             interaction.channel.delete()
         }, 2000)
