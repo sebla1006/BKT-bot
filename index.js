@@ -48,6 +48,18 @@ client.on('ticketCreate', async (member) => {
                 allow: [ Permissions.FLAGS.VIEW_CHANNEL, Permissions.FLAGS.SEND_MESSAGES ]
             },
             {
+                id: "942475757047935046",
+                allow: [ Permissions.FLAGS.VIEW_CHANNEL, Permissions.FLAGS.SEND_MESSAGES ]
+            },
+            {
+                id: "942475760092987442",
+                allow: [ Permissions.FLAGS.VIEW_CHANNEL, Permissions.FLAGS.SEND_MESSAGES ]
+            },
+            {
+                id: "961348598904258631",
+                allow: [ Permissions.FLAGS.VIEW_CHANNEL, Permissions.FLAGS.SEND_MESSAGES ]
+            },
+            {
                 id: "942462504246857748",
                 deny: [ Permissions.FLAGS.VIEW_CHANNEL ]
             }
