@@ -10,7 +10,7 @@ const creator = ( channel ) => {
         .setTitle("Recrutement")
         .setDescription("Pour créer un ticket réagissez avec ✉️.")
         .setFooter({text: "BKT esport" , iconURL: "https://i.imgur.com/Xu89RO6.jpg"})
-        .setColor("#8F51C5")
+        .setColor("#8F51C5");
 
     const row = new MessageActionRow()
         .addComponents(
@@ -19,9 +19,9 @@ const creator = ( channel ) => {
                 .setLabel("Créer un ticket")
                 .setCustomId("ticket")
                 .setEmoji("✉️")
-        )
+        );
             
-    channel.send( {embeds: [embed], components: [row]} )   
+    channel.send( {embeds: [embed], components: [row]} );
 }
 
 module.exports = {
